@@ -1,7 +1,7 @@
-<!-- ŠRIFTAI-->
+/* ŠRIFTAI*/ 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap");
 
-<!-- PGR spalvos ir sriftai-->
+/* PGR spalvos ir sriftai*/ 
 :root {
   --default-font: "Nunito", sans-serif;
   --heading-font: "Playfair Display", serif;
@@ -10,10 +10,10 @@
   --nav-hover-color: #1a1a1a;
   --heading-color: #111111;
   --default-color: #222222;
+}
+  /* 2. SRIFTO DETALES*/ 
 
-  <!-- 2. SRIFTO DETALES-->
-
-  <!-- 2a sriftu seima-->
+  /* 2a sriftu seima*/ 
 body {
   font-family: "Nunito", sans-serif;
 }
@@ -39,7 +39,7 @@ h6 { font-size: 14px; font-weight: 600; text-transform: uppercase; }
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #111111;
-
+}
 /* Linija po sekcijos pavadinimu */
 .section-title h2::after {
   background: #1a1a1a;
@@ -54,7 +54,7 @@ p {
   color: #3a3a3a;
 }
 
-<!-- 3. MYGTUKAI IR NUORODOS-->
+/* 3. MYGTUKAI IR NUORODOS*/ 
 
 /* 3a. Mygtukai (kontaktų formos „Send Message“) */
 .contact .php-email-form button[type=submit] {
@@ -95,20 +95,9 @@ a:hover {
   text-decoration: underline;
 }
 
-<!-- 4. ISDESTYMAS: tarpai, krastines, seseliai-->
+/* 4. ISDESTYMAS: tarpai, krastines, seseliai*/ 
 
 /* 4a. Didesni tarpai „Apie“, „Patirtis“, „Atlikti darbai“ */
-.about,
-.resume,
-.portfolio {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.about .content {
-  padding: 30px 35px;
-  margin-top: 10px;
-}
 .about,
 .resume,
 .portfolio {
@@ -170,8 +159,8 @@ a:hover {
   border-radius: 16px;
   border-top: 5px solid #1a1a1a;
 }
-''
-<!-- 5. DU KOMPONENTAI: navigacija ir progreso juostos-->
+
+/* 5. DU KOMPONENTAI: navigacija ir progreso juostos*/ 
 .navmenu a,
 .navmenu a:focus {
   background: #ececec;          
@@ -191,7 +180,7 @@ a:hover {
   border-color: #1a1a1a;
 }
 
-<!-- 5. Komponentas Nr. 2 - progreso juostos („Skills“ skiltyje) -->
+/* 5. Komponentas Nr. 2 - progreso juostos („Skills“ skiltyje) */ 
 .skills .progress-bar-wrap {
   height: 14px;
   background: #ececec;
@@ -205,7 +194,7 @@ a:hover {
   background: linear-gradient(90deg, #1a1a1a, #c0c0c0);
 }
 
-<!--papildoma uzduotis-->
+/*papildoma uzduotis*/ 
 
 /* 1a. Nenumeruotas sąrašas - savi ženkliukai su ::before */
 .services .col-lg-6 > ul {
