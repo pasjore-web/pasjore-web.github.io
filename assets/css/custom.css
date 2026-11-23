@@ -136,3 +136,71 @@ a:hover {
   border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
 }
+
+/* „Apie“ paveikslėlis */
+.about img {
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* „Patirtis“ įrašai kaip kortelės */
+.resume .resume-item {
+  background: #ffffff;
+  padding: 20px 20px 20px 28px;
+  border-left: 4px solid #1a1a1a;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.resume .resume-item::before {
+  border-color: #1a1a1a;
+  left: -10px;
+  top: 22px;
+}
+
+/* „Atlikti darbai“ grafikai */
+.portfolio .portfolio-item img {
+  border: 3px solid #ececec;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* „Paslaugų“ kortelės */
+.services .service-item {
+  border-radius: 16px;
+  border-top: 5px solid #1a1a1a;
+}
+''
+<!-- 5. DU KOMPONENTAI: navigacija ir progreso juostos-->
+.navmenu a,
+.navmenu a:focus {
+  background: #ececec;          
+  color: #4a4a4a;
+  border: 2px solid #c0c0c0;    
+  border-radius: 14px;          
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  margin-bottom: 10px;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover > a {
+  background: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+<!-- 5. Komponentas Nr. 2 - progreso juostos („Skills“ skiltyje) -->
+.skills .progress-bar-wrap {
+  height: 14px;
+  background: #ececec;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skills .progress-bar {
+  height: 14px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #1a1a1a, #c0c0c0);
+}
