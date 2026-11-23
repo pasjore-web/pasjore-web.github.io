@@ -1,0 +1,14 @@
+<!-- ŠRIFTAI-->
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Nunito:wght@400;600;700&display=swap");
+
+<!-- PGR spalvos ir sriftai-->
+:root {
+  --default-font: "Nunito", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --nav-font: "Playfair Display", serif;
+  --accent-color: #1a1a1a;
+  --nav-hover-color: #1a1a1a;
+  --heading-color: #111111;
+  --default-color: #222222;
+
+  
