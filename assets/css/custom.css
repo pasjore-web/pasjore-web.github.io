@@ -232,3 +232,87 @@ a:hover {
   padding-left: 0;
   counter-reset: etapas;       
 }
+
+.services ol li {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 14px;
+  line-height: 32px;
+  counter-increment: etapas;    
+}
+
+.services ol li::before {
+  content: counter(etapas);     
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 1b. Įdėtinis sąrašas – atskiras stilius */
+.services ul ul {
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 15px;
+  border-left: 3px dashed #c0c0c0;
+}
+
+.services ul ul li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+  font-style: italic;
+  color: #555555;
+}
+
+.services ul ul li::before {
+  content: "–";
+  position: absolute;
+  left: 4px;
+  color: #707070;
+}
+
+/* 2. Lentelė */
+.services .table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+/* 2c. Vienodi vidiniai tarpai ir lygiavimas centre */
+.services .table th,
+.services .table td {
+  padding: 14px 18px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: none;
+}
+
+/* 2a. Antraštinė eilutė */
+.services .table thead th {
+  background: #1a1a1a;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 2b. „Zebra“ stilius */
+.services .table tbody tr:nth-child(odd) td {
+  background: #ffffff;
+}
+
+.services .table tbody tr:nth-child(even) td {
+  background: #f5f5f5;
+}
+
+/* 2b. :hover efektas eilutei */
+.services .table tbody tr:hover td {
+  background: #dcdcdc;
+}
