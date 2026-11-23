@@ -204,3 +204,31 @@ a:hover {
   border-radius: 20px;
   background: linear-gradient(90deg, #1a1a1a, #c0c0c0);
 }
+
+<!--papildoma uzduotis-->
+
+/* 1a. Nenumeruotas sąrašas - savi ženkliukai su ::before */
+.services .col-lg-6 > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services .col-lg-6 > ul > li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.services .col-lg-6 > ul > li::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: #1a1a1a;
+}
+
+/* 1a. Numeruotas sąrašas - skaitikliai (counters) */
+.services ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: etapas;       
+}
