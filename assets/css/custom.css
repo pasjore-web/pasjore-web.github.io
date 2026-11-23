@@ -91,6 +91,48 @@ a {
 }
 
 a:hover {
-  color: #707070;               /* pilka užvedus */
+  color: #707070;              
   text-decoration: underline;
+}
+
+<!-- 4. ISDESTYMAS: tarpai, krastines, seseliai-->
+
+/* 4a. Didesni tarpai „Apie“, „Patirtis“, „Atlikti darbai“ */
+.about,
+.resume,
+.portfolio {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.about .content {
+  padding: 30px 35px;
+  margin-top: 10px;
+}
+.about,
+.resume,
+.portfolio {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.about .content {
+  padding: 30px 35px;
+  margin-top: 10px;
+}
+
+.resume .resume-item {
+  margin-bottom: 25px;
+}
+
+.portfolio .portfolio-item {
+  margin-bottom: 10px;
+}
+
+/* 4b. Turinio blokai su kraštinėmis, užapvalinimais ir šešėliais */
+.about .content {
+
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
 }
