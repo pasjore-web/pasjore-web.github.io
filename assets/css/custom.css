@@ -11,4 +11,86 @@
   --heading-color: #111111;
   --default-color: #222222;
 
-  
+  <!-- 2. SRIFTO DETALES-->
+
+  <!-- 2a sriftu seima-->
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* 2b. Antraštės h1–h6 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #111111;
+  letter-spacing: 0.5px;
+}
+
+h1 { font-size: 44px; font-weight: 800; }
+h2 { font-size: 32px; font-weight: 700; }
+h3 { font-size: 24px; font-weight: 700; }
+h4 { font-size: 19px; font-weight: 600; }
+h5 { font-size: 16px; font-weight: 600; color: #1a1a1a; }
+h6 { font-size: 14px; font-weight: 600; text-transform: uppercase; }
+
+/* Sekcijų pavadinimai  */
+.section-title h2 {
+  font-size: 34px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #111111;
+
+/* Linija po sekcijos pavadinimu */
+.section-title h2::after {
+  background: #1a1a1a;
+  height: 4px;
+  border-radius: 4px;
+}
+
+/* 2c. Pastraipos */
+p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #3a3a3a;
+}
+
+<!-- 3. MYGTUKAI IR NUORODOS-->
+
+/* 3a. Mygtukai (kontaktų formos „Send Message“) */
+.contact .php-email-form button[type=submit] {
+  background: #1a1a1a;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 36px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
+}
+
+/* Užvedus pelę */
+.contact .php-email-form button[type=submit]:hover {
+  background: #4a4a4a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* Paspaudus */
+.contact .php-email-form button[type=submit]:active {
+  background: #111111;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* 3b. Nuorodos */
+a {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #707070;               /* pilka užvedus */
+  text-decoration: underline;
+}
